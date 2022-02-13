@@ -32,7 +32,11 @@ a {
 li {
     list-style: none;
 }
-
+h1, h2, h3, h4, ul, p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
 /* Хедер*/
 /* Логотип */
 .logo {
@@ -49,7 +53,9 @@ color: #2196F3;
 .logo span:hover {
     color: var(--accent-color);
 }
-
+.header {
+    border: 1px solid #ECECEC;
+}
 
 .header .list {
     font-weight: 500;
@@ -70,6 +76,12 @@ color: #2196F3;
 
 /*index*/
 /* hero */
+.section-hero {
+    background-color: var(--background-hero-footer-color);
+    padding-top: 200px;
+    padding-bottom: 280px;
+}
+
 h1 {
     color: var(--hero-text-color);
     background-color: var(--background-hero-footer-color);
@@ -79,6 +91,7 @@ h1 {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-bottom: 30px;
 }
 button {
     color: var(--hero-text-color);
@@ -98,16 +111,22 @@ button:hover, button:focus {
 }
 
 /* Секции */
+.section-second, .projects, .section-team, .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 h2 {font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    margin-bottom: 50px;
 }
 .section h3 {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 p {
     color: var(--parahraf-text-color);
@@ -120,19 +139,22 @@ p {
 .section-team{
     background: var(--background-team-color);
 }
-}
 .section-team h3 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-bottom: 10px;
 }
 .section-team p {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-
-
+}
+.team {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 /* Футер */
 .footer {
@@ -140,10 +162,15 @@ p {
     font-size: 14px;
     line-height: 1.71;
     background-color: var(--background-hero-footer-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer .link:hover,
 .footer .list:focus{
     color: var(--accent-color);
+}
+.footer>div {
+    margin-bottom: 20px;
 }
 .logof span {
     color: var(--hero-text-color);
@@ -153,6 +180,12 @@ p {
 }
 .logof span:hover {
     color: var(--accent-color);
+}
+/* .address>li {
+    margin-bottom: 9px;
+} */
+.address>li:not(:last-child) {
+    margin-bottom: 9px;
 }
 .city {
     font-style: normal;
@@ -174,6 +207,9 @@ p {
     line-height: 1.63;
     text-align: center;
 }
+.buttons {
+    padding-bottom: 30px;
+}
 .buttons button:hover,
 .buttons button:focus{
     color: var(--hero-text-color);
@@ -189,4 +225,10 @@ p {
 .cards p{
     font-size: 16px;
     line-height: 1.88;
+}
+.cards-name {
+    padding-top: 20px; 
+    padding-right: 24px;
+    padding-bottom: 20px; 
+   padding-left: 24px;
 }
